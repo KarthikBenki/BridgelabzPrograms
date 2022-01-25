@@ -63,8 +63,11 @@ do
 		fi
 		
 done
+echo ${arr[@]}
+echo ${!arr[@]}
 max=${arr[1]}
 min=${arr[1]}
+
 for ((i=1;i<=6;i++))
 do
 	if ((arr[$i]>$max))
@@ -80,6 +83,7 @@ do
 	fi
 	
 done
+
 
 echo "the $x  reached ${arr[$x]} times and  maximum times"
 echo "The $y  reached ${arr[$y]} times and  mimimum times"
