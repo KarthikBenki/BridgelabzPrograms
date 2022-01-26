@@ -7,12 +7,13 @@ for ((i=1;i<=n;i++))
 do
 	if ((i<n))
 	then
-		echo "1/$i +"
+		printf " 1/$i +"
 	fi
 
 	if ((i==n))
 	then
-		echo "1/$i"
+		printf " 1/$i"
 	fi
 	add=`echo 1/$i | bc -l`
 done
+printf "\n"
